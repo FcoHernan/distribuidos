@@ -1,0 +1,18 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	plagas.sd. root.plagas.sd. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@			IN	NS	plagas.sd.
+plagas.sd.		IN	A	192.168.10.136
+web.plagas.sd.		IN	A	192.168.10.136
+ventas.plagas.sd. 	IN	A 	192.168.10.136
+db.plagas.sd.		IN	A	192.168.10.135
+
+
