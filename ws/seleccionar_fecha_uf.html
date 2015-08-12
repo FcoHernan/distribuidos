@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Seleccion</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery-2.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap-datetimepicker.js"></script>
+</head>
+<body class="container">
+<br/><br/>
+    <div class="well">
+        <div class="alert alert-info text-center" role="alert">Seleccione una fecha para consultar el valor de la UF</div>
+        <br/>
+        <form action="consumir_uf_web.php" method="post">
+            <table>
+                <tr>
+                    <td class="col-md-3 label-info">Seleccionar Fecha de Consulta</td>
+                    <td>&nbsp; &nbsp; <input type="date" name="fecha"/></td>
+                </tr>
+                <tr>
+                    <td></td><td><br/>&nbsp; &nbsp; <button class="btn btn-danger" type="submit">Consultar UF</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
